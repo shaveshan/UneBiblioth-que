@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="addBook">&#xf7e6;</string>
+    <string name="addBookBtn">&#xf301; Add Book</string>
+    <string name="listBook">&#xf5db;</string>
+    <string name="deleteBook">&#xf1f8;</string>
+    <string name="editBook">&#xf044;</string>
+    <string name="searchBook">&#xf002;</string>
+    <string name="book">&#xf02d;</string>
+    <string name="backBtn">&#xf061;</string>
+    <string name="save">&#xf0c7;</string>
+</resources>

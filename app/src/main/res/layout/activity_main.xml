@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:paddingBottom="40dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#fafafafa">
+
+        <ImageView
+            android:id="@+id/imgTitre"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#fafafa"
+            android:padding="15dp"
+            app:srcCompat="@drawable/download" />
+
+        <TextView
+            android:id="@+id/textTitreMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Library"
+            android:textColor="#AAA"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/allActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TableRow
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:onClick="serBook">
+
+            <LinearLayout
+                android:id="@+id/layoutBtnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eee"
+                android:orientation="horizontal">
+
+                <com.shaveshan.fontawsomeaddtomyapp.MyTextViewFontAwesome
+                    android:id="@+id/btnSearchIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#888"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/searchBook"
+                    android:textColor="#fafafa"
+                    android:textSize="36sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/btnSearchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#DDD"
+                    android:fontFamily="casual"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:shadowColor="#eee"
+                    android:text="Search a book"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:onClick="addBook">
+
+            <LinearLayout
+                android:id="@+id/layoutBtnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eee"
+                android:orientation="horizontal">
+
+                <com.shaveshan.fontawsomeaddtomyapp.MyTextViewFontAwesome
+                    android:id="@+id/btnAddIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#888"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/addBook"
+                    android:textColor="#fafafa"
+                    android:textSize="36sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/btnAddText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#DDD"
+                    android:fontFamily="casual"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:shadowColor="#eee"
+                    android:text="Add a book"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="displaysBookList">
+
+            <LinearLayout
+                android:id="@+id/layoutBtnDisplayesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eee"
+                android:orientation="horizontal">
+
+                <com.shaveshan.fontawsomeaddtomyapp.MyTextViewFontAwesome
+                    android:id="@+id/btnDisplaysIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#888"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/listBook"
+                    android:textColor="#fafafa"
+                    android:textSize="40sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/btnDisplaysText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#DDD"
+                    android:fontFamily="casual"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:shadowColor="#000"
+                    android:text="Displays book list"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

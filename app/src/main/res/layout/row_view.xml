@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.shaveshan.fontawsomeaddtomyapp.MyTextViewFontAwesome
+            android:id="@+id/iconBook"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/book"
+            android:textColor=" #888"
+            android:textColorLink="#000"
+            android:textSize="60sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="casual"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="8dp"
+                android:text="titre"
+                android:textColor="#888"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/src"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="casual"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="8dp"
+                android:text="auter"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

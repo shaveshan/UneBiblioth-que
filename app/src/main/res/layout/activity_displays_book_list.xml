@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#fafafa"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/titreAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="0"
+        android:background="#fafafafa">
+
+        <com.shaveshan.fontawsomeaddtomyapp.MyTextViewFontAwesome
+            android:id="@+id/iconlistBook"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/listBook"
+            android:textSize="54sp" />
+
+        <TextView
+            android:id="@+id/listBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/list_book"
+            android:textColor="#AAA"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/vide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#DDD"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/empty_list"
+        android:textColor="#8A8A8A"
+        android:textColorLink="#888"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/thisList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fafafa"
+        android:visibility="invisible" />
+
+</LinearLayout>
